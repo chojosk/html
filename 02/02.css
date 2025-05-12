@@ -26,10 +26,19 @@ footer>ul {
     height: 10%;
 
     /* 안쪽 여백 / 4개 : 시계방향으로 배정 / 2개 : 위 아래 */
-    padding: 10% 10% 3% 3%;
+    padding: 10px;
 
     /* 바깥 여백 */
-    margin: 20px;
+    margin: 10px;
+
+    /* 패딩과 테두리를 포함 */
+    box-sizing: border-box;
+
+    /* 플렉스 박스 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .g2 {
@@ -50,11 +59,51 @@ footer>ul {
 
 /* 전체 선택자 */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 10px;
+    margin: 10px;
 }
 
 /* 속성 선택자 */
 h2[class] {
     color: yellow;
+}
+
+strong {
+    display: inline-block;
+    background-color:bisque ;
+    color: blueviolet;
+
+    width: 50%;
+    height: 40px;
+}
+
+article > p {
+   
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+      
+}
+
+.fbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.fbox > div {
+    margin-right: 20px;
+}
+
+img {
+    border-radius: 20%;
+}
+
+ul > li {
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
 }
