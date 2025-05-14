@@ -1,109 +1,147 @@
-
-/* cf) (#)id값 > (.)클래스 */
-/* cf) width / height / padding -> %, px */
-
-
-
-/* 조상 자손 태그 셀럭터 */
-header ul {
-    background-color: rgb(189, 80, 46);
-    color: rgb(0, 0, 80);
-}
-/* 부자 자식 태그 셀렉터 */
-footer>ul {
-    background-color: rgb(205, 109, 31);
-    color: rgb(0, 0, 80);
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
+body {
+    width: 80%;
+    margin-left: 10%;
+}
 
-/* 클래스 셀렉터(.) */
-.g1 {
-    background-color: rgb(200, 221, 11);
-    color: white;
-
-    /* 가로와 세로 */
-    width: 50%;
-    height: 10%;
-
-    /* 안쪽 여백 / 4개 : 시계방향으로 배정 / 2개 : 위 아래 */
-    padding: 10px;
-
-    /* 바깥 여백 */
-    margin: 10px;
-
-    /* 패딩과 테두리를 포함 */
+header,
+main {
+    background-color: aliceblue;
     box-sizing: border-box;
+}
 
-    /* 플렉스 박스 */
+/* main {
+    background-color: aliceblue;
+} */
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+}
+
+header ul {
+    display: flex;
+}
+
+nav>ul>li {
+    padding: 1px;
+    margin: 5px;
+    
+}
+
+nav {
+    margin-left: 100px;
+    height: 330px;
+    align-items: center;
+}
+
+article {
+    /* margin-top: 50px; */
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* border: 1px blue solid; */
+}
+
+article>h1 {
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 
-.g2 {
-    background-color: rgb(10, 92, 74);
+article>p {
+    padding-top: 20px;
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+}
+
+#menu1 a {
+    text-decoration: none;
+    background-color: blue;
     color: white;
+    padding: 1px 5px;
+    border-radius: 5px;
+
 }
 
-/* id 셀렉터(#) */
-#html {
-    background-color: rgb(25, 25, 204);
-    color: white;
+#menu1 a:hover {
+    background-color: brown;
 }
 
-/* 그룹 id 셀렉터 */
-#s1, #s2 {
-    background-color: grey;
-}
 
-/* 전체 선택자 */
-* {
-    padding: 10px;
-    margin: 10px;
-}
-
-/* 속성 선택자 */
-h2[class] {
-    color: yellow;
-}
-
-strong {
-    display: inline-block;
-    background-color:bisque ;
-    color: blueviolet;
-
-    width: 50%;
-    height: 40px;
-}
-
-article > p {
-   
-        font-family: "Nanum Pen Script", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 30px;
-      
+.textred {
+    color: red;
 }
 
 .fbox {
     display: flex;
-    flex-direction: row;
+    /* justify-content:space-between;
+    margin: 10px;
+    box-sizing: border-box; */
 }
 
-.fbox > div {
+.fbox>div {
     margin-right: 20px;
+    width: 20%;
+}
+
+.fbox>p {
+    width: 90%;
+    height: 150px;
+    /* border: 1px blue solid; */
+    display: flex;
+    align-items: center;
+}
+
+.fbox span {
+    display: contents;
+    color: blue;
+    font-size: 20px;
 }
 
 img {
     border-radius: 20%;
 }
 
-ul > li {
-    margin-left: 20px;
+h2 {
+    margin-bottom: 30px;
+    background-color: skyblue;
+    padding: 5px 30px;
 }
 
-ul {
-    list-style: none;
-    display: flex;
+section {
+    margin-top: 50px;
 }
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+}
+
+header  > div > img{
+    border-radius: 10%;
+    margin-left:70px;
+    margin-top: 20px;
+}
+

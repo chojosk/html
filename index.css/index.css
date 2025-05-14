@@ -1,0 +1,60 @@
+header, main, footer {
+    margin-left: 10%;
+    width: 80%;
+    border: 1px blue solid;
+    margin-top: 10px;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 5px 15px;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0px 5px;
+    padding : 5px 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+footer a:hover, #inflearn:hover {
+    background-color: brown;
+}
+
+#inflearn {
+    background-color: green;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main li{
+    border: 1px green dotted;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+main li:hover {
+    background-color: aliceblue;
+}
+
+main ol {
+    margin-left: 5%;
+    width: 85%;
+}
+
+main {
+    height: 70vh;
+}
