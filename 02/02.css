@@ -3,10 +3,10 @@
     margin: 0px;
 }
 
-body {
+/* body {
     width: 80%;
     margin-left: 10%;
-}
+} */
 
 header,
 main {
@@ -33,7 +33,7 @@ header ul {
 nav>ul>li {
     padding: 1px;
     margin: 5px;
-    
+
 }
 
 nav {
@@ -139,9 +139,17 @@ footer>ul {
     font-size: small;
 }
 
-header  > div > img{
+header>div>img {
     border-radius: 10%;
-    margin-left:70px;
+    margin-left: 70px;
     margin-top: 20px;
 }
 
+/*  */
+@media screen and {max-width: 1024px) {
+    body {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+}

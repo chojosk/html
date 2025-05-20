@@ -1,0 +1,44 @@
+form, main > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fInput, .fButton {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    justify-content: center;
+
+    background-color: aliceblue;
+
+}
+
+.fInput > input {
+    width: 45%;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.fButton > button {
+    width: 27%;
+    height: 45px;
+    margin: 17px;
+}
+
+.bt04 {
+    width: 30%;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+/* 속성 - 대괄호 */
+[readonly] {
+    background-color: beige;
+}
