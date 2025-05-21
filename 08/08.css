@@ -1,0 +1,38 @@
+form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* background-color: aliceblue; */
+  border: 1px dotted gray;
+}
+
+.mdiv {
+  width: 45%;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.mdiv > select {
+  width: 80%;
+  height: 40px;
+}
+
+.mdiv > input {
+  width: 60% ;
+  height: 30px;
+}
+
+[readonly] {
+  background-color: beige;
+}
+
+body > div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  margin: 0 auto;
+  margin-top: 20px;
+}
