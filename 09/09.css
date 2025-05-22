@@ -1,0 +1,36 @@
+.mdiv {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  /* background-color: black; */
+
+}
+
+/* #btArea, #btInput {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+} */
+
+body > div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+input, button {
+  height: 40px ;
+  margin: 30px;
+} 
+
+
+#btArea > button {
+  width: 150px;
+  background-color: green;
+}
+

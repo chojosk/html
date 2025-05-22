@@ -36,3 +36,22 @@ body > div {
   margin: 0 auto;
   margin-top: 20px;
 }
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+[for=txt1] {
+  color: red;
+  /* font-weight: bold;
+  font-size: 20px; */
+}
+
+[for=txt2] {
+  color: green;
+  /* font-weight: bold;
+  font-size: 20px; */
+} 
+
